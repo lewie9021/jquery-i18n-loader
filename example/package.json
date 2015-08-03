@@ -1,0 +1,16 @@
+{
+  "name": "jquery-i18n-loader-example",
+  "version": "0.0.1",
+  "description": "Example package demonstrating the jQuery i18n loader.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lewis Barnes",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "2.1.4",  
+    "jquery.18n": "wikimedia/jquery.i18n#v1.0.3",
+    "jquery-i18n-loader": "lewie9021/jquery-i18n-loader",
+    "webpack": "1.10.5"
+  }
+}

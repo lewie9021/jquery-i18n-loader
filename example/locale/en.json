@@ -1,0 +1,12 @@
+{
+    "@metadata" : {
+	"authors" : [
+	    "Lewis"
+	],
+	"last-updated": "2015-08-03",
+	"locale": "en"
+    },
+    
+    "hello-world": "Hello World!",
+    "greetings": "Greetings $1!"
+}
