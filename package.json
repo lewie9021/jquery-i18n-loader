@@ -1,5 +1,5 @@
 {
-  "name": "i18n-jquery-loader",
+  "name": "jquery-i18n-loader",
   "version": "0.0.1",
   "description": "jQuery based i18n loader for Webpack.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lewie9021/i18n-jquery-loader.git"
+    "url": "git+https://github.com/lewie9021/jquery-i18n-loader.git"
   },
   "keywords": [
     "i18n",
@@ -21,7 +21,7 @@
   "author": "Lewis Barnes",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lewie9021/i18n-jquery-loader/issues"
+    "url": "https://github.com/lewie9021/jquery-i18n-loader/issues"
   },
-  "homepage": "https://github.com/lewie9021/i18n-jquery-loader#readme"
+  "homepage": "https://github.com/lewie9021/jquery-i18n-loader#readme"
 }
