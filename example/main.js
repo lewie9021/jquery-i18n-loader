@@ -4,7 +4,7 @@ window.$ = window.jQuery = require("jquery");
 // Since there is a number of files, we'll make use of require.context to make it more readable.
 var req = require.context("jquery.i18n/src");
 
-// Quick and dirty way to require all the nessarry files. We do it this way to maintain require order.
+// Quick and dirty way to require all the necessary files. We do it this way to maintain require order.
 var files = ["js", "messagestore", "fallbacks", "parser", "emitter", "language"];
 files.forEach(function(module) {
     req("./jquery.i18n." + module);
