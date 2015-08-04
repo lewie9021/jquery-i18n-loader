@@ -6,11 +6,11 @@ A loader for Webpack that injects locale files for use with [wikimedia/jquery.i1
 
 ### Motivation
 
-There doesn't seem to be any loaders that support the jQuery.i18n internationalization library. So I decided I would create one. I plan to soon fork wikimedia/jquery.i18n in the near future and implement support for module systems such as Webpack.
+There didn't seem to be any loaders that supported the jQuery.i18n internationalization library, so I decided I would create one myself. I plan to soon fork wikimedia/jquery.i18n in the near future and implement support for module systems such as Webpack.
 
 ### Example
 
-Below is a simple Webpack configuration (webpack.config.js).
+Below is a simple Webpack configuration file (webpack.config.js).
 
 ```javascript
 var Path = require("path");
