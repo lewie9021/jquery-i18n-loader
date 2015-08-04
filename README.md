@@ -29,7 +29,7 @@ module.exports = {
 };
 ```
 
-Next we need to create a locale file.
+Next we need to create a locale file (en.locale.json).
 
 ```json
 {
@@ -49,5 +49,22 @@ Next we need to create a locale file.
 Lastly, we'll require jQuery.i18n and the locale file.
 
 ```javascript
-// TODO
+// require jQuery and attach it to the window (eww).
+window.$ = window.jQuery = require("jquery");
+
+// Since there is a number of files, we'll make use of require.context to make it more readable.
+var req = require.context("jquery.i18n/src");
+
+// Quick and dirty way to require all the necessary files. We do it this way to maintain require order.
+var files = ["js", "messagestore", "fallbacks", "parser", "emitter", "language"];
+files.forEach(function(module) {
+    req("./jquery.i18n." + module);
+});
+
+// Require the locale file.
+require("./en.locale.json");
+
+// Alert the user to show it's working.
+alert('$.i18n("hello-world") -> ' + $.i18n("hello-world"));
+alert('$.i18n("greetings", "Lewis") -> ' + $.i18n("greetings", "Lewis"));
 ```
